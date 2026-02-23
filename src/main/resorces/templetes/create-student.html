@@ -3,17 +3,18 @@
 <head>
     <meta charset="ISO-8859-1">
     <title>Create Student</title>
-    <link rel="stylesheet"
-          href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" th:href="@{/css/style.css}">
 </head>
 
 <body>
 
 <div class="container mt-5">
     <div class="row justify-content-center">
-        <div class="col-lg-6 card p-4">
+        <div class="col-lg-6 card">
 
-            <h2 class="text-center">Create New Student</h2>
+            <h2 class="text-center">Create Student</h2>
 
             <form th:action="@{/students}" th:object="${student}" method="POST">
 

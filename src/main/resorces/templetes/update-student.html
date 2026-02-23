@@ -3,21 +3,21 @@
 <head>
     <meta charset="ISO-8859-1">
     <title>Update Student</title>
-    <link rel="stylesheet"
-          href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" th:href="@{/css/style.css}">
 </head>
 
 <body>
 
 <div class="container mt-5">
     <div class="row justify-content-center">
-        <div class="col-lg-6 card p-4">
+        <div class="col-lg-6 card">
 
             <h2 class="text-center">Update Student</h2>
 
             <form th:action="@{/students/{id}(id=${student.id})}"
-                  th:object="${student}"
-                  method="POST">
+                  th:object="${student}" method="POST">
 
                 <div class="form-group">
                     <label>First Name</label>
